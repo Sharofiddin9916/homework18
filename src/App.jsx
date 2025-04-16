@@ -1,16 +1,13 @@
 import React from 'react'
 import { Route, Routes } from 'react-router'
-import { HomePageTag } from './app.style'
 import Layout from './layout'
-
+import MainPage from "./pages/Main";
 function App() {
   return (
     <div>
       <Layout>
         <Routes>
-          <Route index element={(
-            <HomePageTag>Home Page</HomePageTag>
-          )} />
+          <Route index element={<MainPage/>}/>
         </Routes>
       </Layout>
     </div>
